@@ -1,0 +1,21 @@
+# Raw brand source — NOT for the public site (paid fonts, PSDs, packaging, etc.)
+assets/
+
+# Source/binary design files that should never be published
+*.psd
+*.ai
+*.eps
+*.zip
+*.otf
+*.ttf
+*.woff
+*.woff2
+*.bmp
+
+# Local tooling
+.claude/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini

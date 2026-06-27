@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{APP_NAME}} — Privacy Policy · CNTRL Design</title>
+  <meta name="description" content="Privacy policy for {{APP_NAME}} by CNTRL Design.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../favicon.png" sizes="any" type="image/png">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <!--
+    CNTRL Design privacy-policy TEMPLATE.
+    To make a new app's policy:
+      1. Copy this /template/privacy/ folder to /<appname>/privacy/
+      2. Find & replace {{APP_NAME}} and {{APP_TAGLINE}}
+      3. Set the "Last updated" date
+      4. REWRITE section 02 ("Information that leaves your device") to match
+         what THAT app actually sends off-device. Delete anything that doesn't apply.
+      5. Keep sections 01, 03-10 unless the app genuinely differs.
+    See template/README.md for the full checklist.
+  -->
+  <div class="brandbar"></div>
+
+  <header class="site-head">
+    <a class="logo" href="../../index.html" aria-label="CNTRL Design home">
+      <img class="logo-light" src="../../img/logo-black.png" alt="CNTRL Design" width="180" height="60" loading="eager">
+      <img class="logo-dark" src="../../img/logo-white.png" alt="CNTRL Design" width="180" height="60" loading="eager">
+    </a>
+    <span class="label">Privacy</span>
+  </header>
+
+  <main class="wrap" id="main">
+    <p class="eyebrow" style="margin-top:40px">{{APP_NAME}} · Privacy Policy</p>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">{{APP_TAGLINE}}</p>
+
+    <div class="meta">
+      <div><strong>Provider:</strong> CNTRL Design (&ldquo;we&rdquo;, &ldquo;us&rdquo;)</div>
+      <div><strong>Last updated:</strong> {{LAST_UPDATED}}</div>
+      <div><strong>Contact:</strong> <a href="mailto:support@cntrldesign.com">support@cntrldesign.com</a></div>
+    </div>
+
+    <p class="lede">This policy explains what {{APP_NAME}} handles and where it goes. We build our apps to need as little of your data as possible.</p>
+
+    <div class="callout">
+      <strong>The short version:</strong> Your content lives <strong>on your device</strong>. We have no account system and never ask for your name or email. {{SHORT_VERSION_WHAT_LEAVES}}
+    </div>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">01</span><h2>Information stored only on your device</h2></div>
+      <p>Everything you enter or generate in normal use is saved locally on your device and is <strong>not</strong> transmitted to us. If you delete the app, or use the in-app data-reset option, this information is erased from your device. We keep no copy.</p>
+    </section>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">02</span><h2>Information that leaves your device</h2></div>
+      <!-- APP-SPECIFIC: rewrite this whole section per app. Example structure below. -->
+      <p>{{DESCRIBE_WHAT_LEAVES_THE_DEVICE_AND_WHY}}</p>
+      <h3>Subscriptions</h3>
+      <p>If the app offers a paid subscription, it is processed by <strong>Apple</strong> through the App Store. We use <strong>RevenueCat</strong> to manage and verify subscription status via a random, anonymous purchase identifier. We never see your payment card details &mdash; Apple handles payment.</p>
+      <h3>Diagnostics</h3>
+      <p>Our servers keep limited technical error logs to keep the service running. These do not contain your personal content.</p>
+    </section>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">03</span><h2>What we do NOT collect</h2></div>
+      <p>We do not collect your name, email address, phone number, contacts, precise location, or advertising identifiers. {{APP_NAME}} contains <strong>no advertising, no third-party analytics/tracking SDKs, and we never sell your data.</strong></p>
+    </section>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">04</span><h2>Third-party services</h2></div>
+      <p>The services that may process data on our behalf, each under its own privacy policy: {{LIST_THIRD_PARTIES}}.</p>
+    </section>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">05</span><h2>Data retention</h2></div>
+      <ul>
+        <li><strong>On-device data:</strong> kept until you delete it or uninstall the app.</li>
+        <li><strong>Anything sent for processing:</strong> not retained by us after the request completes, unless stated above.</li>
+      </ul>
+    </section>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">06</span><h2>Your choices and deletion</h2></div>
+      <ul>
+        <li><strong>Delete your data:</strong> use the in-app reset option, or uninstall the app.</li>
+        <li><strong>Subscriptions:</strong> manage or cancel anytime in your Apple ID &rarr; Subscriptions settings.</li>
+        <li>For any privacy question or request, contact us at the email above.</li>
+      </ul>
+    </section>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">07</span><h2>Children&rsquo;s privacy</h2></div>
+      <p>{{APP_NAME}} is not directed to children under 13, and we do not knowingly collect information from them.</p>
+    </section>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">08</span><h2>Security</h2></div>
+      <p>Data sent off the device travels over encrypted (HTTPS/TLS) connections. No method of transmission or storage is 100% secure, but we limit what is sent and what is kept.</p>
+    </section>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">09</span><h2>Changes to this policy</h2></div>
+      <p>We may update this policy as the app evolves. We will revise the &ldquo;Last updated&rdquo; date above and, for significant changes, note them in the app or its release notes.</p>
+    </section>
+
+    <section class="sec">
+      <div class="sec-h"><span class="sec-n">10</span><h2>Contact</h2></div>
+      <p>Questions? Contact CNTRL Design at <a href="mailto:support@cntrldesign.com">support@cntrldesign.com</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <img class="foot-logo" src="../../img/logo-white.png" alt="CNTRL Design" width="156" height="52" loading="lazy">
+      <p class="foot-tag">Live your life. Take control<span class="dot">.</span></p>
+      <p class="meta-row"><a href="mailto:support@cntrldesign.com">support@cntrldesign.com</a></p>
+      <p class="meta-row">&copy; 2026 CNTRL Design &middot; <a href="../../index.html">cntrldesign.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
