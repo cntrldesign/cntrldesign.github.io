@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FIFO — Privacy Policy · CNTRL Design</title>
-  <meta name="description" content="Privacy policy for FIFO: Pantry & Expiry Tracker by CNTRL Design. Your pantry data stays on your device; we collect no name or email.">
+  <meta name="description" content="Privacy policy for FIFO: Pantry & Recipes by CNTRL Design. Your pantry lives on your device, with an optional private cloud backup when you sign in with Apple.">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../../favicon.png" sizes="any" type="image/png">
@@ -26,23 +26,23 @@
   <main class="wrap" id="main">
     <p class="eyebrow" style="margin-top:40px">FIFO · Privacy Policy</p>
     <h1>Privacy Policy</h1>
-    <p class="subtitle">FIFO: Pantry &amp; Expiry Tracker</p>
+    <p class="subtitle">FIFO: Pantry &amp; Recipes</p>
 
     <div class="meta">
       <div><strong>Provider:</strong> CNTRL Design (&ldquo;we&rdquo;, &ldquo;us&rdquo;)</div>
-      <div><strong>Last updated:</strong> 26 June 2026</div>
+      <div><strong>Last updated:</strong> 9 July 2026</div>
       <div><strong>Contact:</strong> <a href="mailto:support@cntrldesign.com">support@cntrldesign.com</a></div>
     </div>
 
     <p class="lede">FIFO helps you track the food you already have, reduce waste, and plan groceries. We built FIFO to need as little of your data as possible. This policy explains what the app handles and where it goes.</p>
 
     <div class="callout">
-      <strong>The short version:</strong> Your pantry, grocery list, recipes, and history live <strong>only on your device</strong>. We have no account system and never ask for your name or email. The only things that leave your device are (1) photos you choose to scan with AI, (2) a scanned barcode for product lookup, and (3) your subscription status &mdash; described below.
+      <strong>The short version:</strong> Your pantry, grocery list, recipes, and history live <strong>on your device</strong>. If you choose to sign in with Apple, we also keep <strong>one private cloud backup</strong> of that data so you can restore it. The only things that leave your device are (1) photos you choose to scan with AI, (2) a scanned barcode for product lookup, (3) your subscription status, and (4) your cloud backup if you sign in &mdash; described below. No ads, no tracking, no analytics.
     </div>
 
     <section class="sec">
-      <div class="sec-h"><span class="sec-n">01</span><h2>Information stored only on your device</h2></div>
-      <p>Everything you enter or generate in normal use is saved locally on your device and is <strong>not</strong> transmitted to us:</p>
+      <div class="sec-h"><span class="sec-n">01</span><h2>Information stored on your device</h2></div>
+      <p>Everything you enter or generate in normal use is saved locally on your device. Unless you sign in and it is part of your cloud backup (section 02c), it is <strong>not</strong> transmitted to us:</p>
       <ul>
         <li>Pantry items, quantities, locations, and expiry dates</li>
         <li>Grocery / shopping lists</li>
@@ -50,38 +50,44 @@
         <li>Used / thrown-away history and money-saved figures</li>
         <li>App settings (theme, text size)</li>
       </ul>
-      <p>If you delete the app, or use <strong>Reset app</strong> in Settings, this information is erased from your device. We keep no copy.</p>
+      <p>If you delete the app, or use <strong>Reset app</strong> in Settings, this information is erased from your device. We keep no copy &mdash; unless you have signed in and it is part of your cloud backup (section 02c).</p>
     </section>
 
     <section class="sec">
       <div class="sec-h"><span class="sec-n">02</span><h2>Information that leaves your device</h2></div>
       <h3>a) AI photo scanning</h3>
       <p>When you choose to scan a receipt or a photo of your food, the image is resized and sent &mdash; over an encrypted connection &mdash; to our processing service (Supabase Edge Functions) and our AI provider (<strong>Anthropic</strong>, the Claude API) to identify the items in it. The same applies to text-only AI features (recipe ideas, grocery suggestions, waste tips), which send the relevant item names.</p>
-      <p>We do <strong>not</strong> store these images or the AI results on our servers; they are processed to generate your result and then discarded. Anthropic processes the request under its own terms and does not use it to train its models.</p>
+      <p>We do <strong>not</strong> store these images or the AI results on our servers; they are processed to generate your result and then discarded. The image carries no name, email, or account details. Anthropic processes the request under its own terms, does not use it to train its models, and typically deletes API inputs and outputs from its systems within about 30 days.</p>
       <h3>b) Barcode lookup</h3>
       <p>If you scan a product barcode, the barcode number is sent to <strong>Open Food Facts</strong> (an open product database) to fetch the product name. No personal information is included.</p>
-      <h3>c) Fair-use rate limiting</h3>
-      <p>So that AI features stay affordable and available to everyone, the app creates a <strong>random, anonymous identifier</strong> (via Supabase anonymous sign-in). It is not linked to your name, email, or Apple ID. We store only a <strong>daily count</strong> of AI requests against that identifier to enforce per-user and overall limits. Reinstalling the app generates a new identifier.</p>
-      <h3>d) Subscriptions</h3>
-      <p>Premium subscriptions are processed by <strong>Apple</strong> through the App Store. We use <strong>RevenueCat</strong> to manage and verify subscription status. RevenueCat assigns a random, anonymous purchase identifier and receives your purchase/subscription details and basic device information to keep your Premium access in sync. We never see your payment card details &mdash; Apple handles payment.</p>
-      <h3>e) Diagnostics</h3>
+      <h3>c) Optional account and cloud backup (Sign in with Apple)</h3>
+      <p>FIFO works fully without an account. If you choose to <strong>Sign in with Apple</strong>, we receive your email address &mdash; or Apple&rsquo;s private relay address if you pick <em>Hide My Email</em> &mdash; and, the first time only, your name (shown on your account screen). Both are stored with your account until you delete it.</p>
+      <p>Signing in also keeps <strong>one cloud backup</strong> of your pantry data &mdash; items, lists, recipes, history, and settings; never your photos &mdash; stored with your account (via Supabase) and replaced on each sync, so you can restore it on a new device. Access is locked to your account, and it is never shared with anyone else. If you stay signed out, nothing changes: your data stays on your device.</p>
+      <h3>d) Fair-use rate limiting</h3>
+      <p>So that AI features stay affordable and available to everyone, the app creates a <strong>random, anonymous identifier</strong> (via Supabase anonymous sign-in) and stores only a <strong>daily count</strong> of AI requests against it, to enforce per-user and overall limits. If you sign in, requests count against your account instead. Reinstalling the app while signed out generates a new identifier.</p>
+      <h3>e) Product images</h3>
+      <p>Item and recipe thumbnails load from <strong>TheMealDB</strong>, a free food-image database. Like any web image, that request carries the generic food name being looked up (for example &ldquo;tomato&rdquo;) and your device&rsquo;s IP address &mdash; never your account details or the rest of your pantry.</p>
+      <h3>f) Subscriptions</h3>
+      <p>Premium subscriptions are processed by <strong>Apple</strong> through the App Store. We use <strong>RevenueCat</strong> to manage and verify subscription status. RevenueCat receives your purchase/subscription details and basic device information under a random purchase identifier &mdash; or, when you sign in, under your account id, so Premium follows your account. We never see your payment card details &mdash; Apple handles payment.</p>
+      <h3>g) Diagnostics</h3>
       <p>Our servers keep limited technical error logs (for example, &ldquo;the AI request failed&rdquo;) to keep the service running. These do not contain your pantry contents or photos.</p>
     </section>
 
     <section class="sec">
       <div class="sec-h"><span class="sec-n">03</span><h2>What we do NOT collect</h2></div>
-      <p>We do not collect your name, email address, phone number, contacts, precise location, or advertising identifiers. FIFO contains <strong>no advertising, no third-party analytics/tracking SDKs, and we never sell your data.</strong></p>
+      <p>We do not collect your phone number, contacts, precise location, or advertising identifiers. Your name and email reach us only through Sign in with Apple &mdash; and only if you choose to sign in. FIFO contains <strong>no advertising, no third-party analytics/tracking SDKs, and we never sell your data.</strong></p>
     </section>
 
     <section class="sec">
       <div class="sec-h"><span class="sec-n">04</span><h2>Third-party services</h2></div>
       <p>The services that may process data on our behalf, each under its own privacy policy:</p>
       <ul>
-        <li><strong>Apple</strong> &mdash; in-app purchases / subscriptions</li>
+        <li><strong>Apple</strong> &mdash; in-app purchases / subscriptions, Sign in with Apple</li>
         <li><strong>RevenueCat</strong> &mdash; subscription management</li>
-        <li><strong>Supabase</strong> &mdash; backend, anonymous authentication, rate limiting</li>
+        <li><strong>Supabase</strong> &mdash; backend, authentication, cloud backup, rate limiting</li>
         <li><strong>Anthropic (Claude API)</strong> &mdash; AI image and text processing</li>
         <li><strong>Open Food Facts</strong> &mdash; barcode product lookup</li>
+        <li><strong>TheMealDB</strong> &mdash; food product images</li>
       </ul>
     </section>
 
@@ -89,6 +95,7 @@
       <div class="sec-h"><span class="sec-n">05</span><h2>Data retention</h2></div>
       <ul>
         <li><strong>On-device data:</strong> kept until you delete it (Reset app) or uninstall the app.</li>
+        <li><strong>Cloud backup, email, and name (signed-in only):</strong> kept while your account exists; deleted permanently with your account.</li>
         <li><strong>Scanned images / AI text:</strong> not retained by us after processing.</li>
         <li><strong>Anonymous rate-limit counts:</strong> automatically roll over daily.</li>
       </ul>
@@ -98,7 +105,8 @@
       <div class="sec-h"><span class="sec-n">06</span><h2>Your choices and deletion</h2></div>
       <ul>
         <li><strong>Delete your data:</strong> use <strong>Reset app</strong> in the app&rsquo;s Settings, or uninstall the app, to remove all information stored on your device.</li>
-        <li><strong>Reset your anonymous identifier:</strong> reinstalling the app issues a new anonymous identifier.</li>
+        <li><strong>Delete your account:</strong> in the app, go to <strong>Account &rarr; Delete account</strong>. This permanently deletes your account, your email and name, and your cloud backup, and revokes the Sign in with Apple connection at Apple. Signing out alone stops syncing but keeps your backup until you delete the account.</li>
+        <li><strong>Reset your anonymous identifier:</strong> reinstalling the app while signed out issues a new anonymous identifier.</li>
         <li><strong>Subscriptions:</strong> manage or cancel anytime in your Apple ID &rarr; Subscriptions settings.</li>
         <li>For any privacy question or request, contact us at the email above.</li>
       </ul>
