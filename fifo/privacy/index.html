@@ -30,7 +30,7 @@
 
     <div class="meta">
       <div><strong>Provider:</strong> CNTRL Design (&ldquo;we&rdquo;, &ldquo;us&rdquo;)</div>
-      <div><strong>Last updated:</strong> 9 July 2026</div>
+      <div><strong>Last updated:</strong> 13 July 2026</div>
       <div><strong>Contact:</strong> <a href="mailto:support@cntrldesign.com">support@cntrldesign.com</a></div>
     </div>
 
@@ -69,13 +69,16 @@
       <p>Item and recipe thumbnails load from <strong>TheMealDB</strong>, a free food-image database. Like any web image, that request carries the generic food name being looked up (for example &ldquo;tomato&rdquo;) and your device&rsquo;s IP address &mdash; never your account details or the rest of your pantry.</p>
       <h3>f) Subscriptions</h3>
       <p>Premium subscriptions are processed by <strong>Apple</strong> through the App Store. We use <strong>RevenueCat</strong> to manage and verify subscription status. RevenueCat receives your purchase/subscription details and basic device information under a random purchase identifier &mdash; or, when you sign in, under your account id, so Premium follows your account. We never see your payment card details &mdash; Apple handles payment.</p>
+      <p>If you installed FIFO after tapping an Apple Search Ads ad, iOS provides a privacy-preserving <strong>attribution token</strong> (Apple&rsquo;s own AdServices &mdash; no advertising identifier, no cross-app tracking) that we pass to RevenueCat to measure which ads bring people to FIFO. It tells us a campaign led to the install; it does not identify you.</p>
       <h3>g) Diagnostics</h3>
       <p>Our servers keep limited technical error logs (for example, &ldquo;the AI request failed&rdquo;) to keep the service running. These do not contain your pantry contents or photos.</p>
+      <h3>h) Feedback you send</h3>
+      <p>If you use <strong>Account &rarr; Send feedback</strong>, the category and the message you type are sent to our backend (Supabase) so we can read it and improve FIFO. It&rsquo;s free text &mdash; include only what you&rsquo;re comfortable sharing. You can also reach us anytime at <a href="mailto:support@cntrldesign.com">support@cntrldesign.com</a>.</p>
     </section>
 
     <section class="sec">
       <div class="sec-h"><span class="sec-n">03</span><h2>What we do NOT collect</h2></div>
-      <p>We do not collect your phone number, contacts, precise location, or advertising identifiers. Your name and email reach us only through Sign in with Apple &mdash; and only if you choose to sign in. FIFO contains <strong>no advertising, no third-party analytics/tracking SDKs, and we never sell your data.</strong></p>
+      <p>We do not collect your phone number, contacts, precise location, or advertising identifiers. Your name and email reach us only through Sign in with Apple &mdash; and only if you choose to sign in. FIFO contains <strong>no in-app advertising, no third-party analytics/tracking SDKs, and we never sell your data.</strong> (We do promote FIFO through Apple Search Ads and receive Apple&rsquo;s privacy-preserving install-attribution token described in section 02f, which does not track you across apps.)</p>
     </section>
 
     <section class="sec">
@@ -98,6 +101,7 @@
         <li><strong>Cloud backup, email, and name (signed-in only):</strong> kept while your account exists; deleted permanently with your account.</li>
         <li><strong>Scanned images / AI text:</strong> not retained by us after processing.</li>
         <li><strong>Anonymous rate-limit counts:</strong> automatically roll over daily.</li>
+        <li><strong>Feedback you send:</strong> kept while we work through it; deleted with your account if you&rsquo;re signed in. Feedback sent without an account can&rsquo;t be traced back to you, so we can&rsquo;t delete it individually.</li>
       </ul>
     </section>
 
