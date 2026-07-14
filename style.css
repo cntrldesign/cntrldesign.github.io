@@ -129,6 +129,19 @@ strong { font-weight: 700; }
   margin: 20px 0;
 }
 
+/* CTA button */
+.cta {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--bg);
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px 0 4px;
+}
+.cta:hover { text-decoration: none; opacity: 0.9; }
+
 /* Numbered sections */
 .sec { margin: 38px 0 0; }
 .sec-h { display: flex; align-items: baseline; gap: 12px; margin: 0 0 8px; }
