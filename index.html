@@ -9,6 +9,10 @@
   <link rel="icon" href="favicon.png" sizes="any" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+  <script>
+  (function(){try{var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}
+  document.addEventListener('DOMContentLoaded',function(){var h=document.querySelector('.site-head');if(!h)return;var b=document.createElement('button');b.className='theme-toggle';b.type='button';var cur=function(){return document.documentElement.getAttribute('data-theme')==='dark'?'dark':'light';};var upd=function(){var d=cur()==='dark';b.textContent=d?'Light':'Dark';b.setAttribute('aria-label',d?'Switch to light mode':'Switch to dark mode');};upd();b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';if(n==='dark')document.documentElement.setAttribute('data-theme','dark');else document.documentElement.removeAttribute('data-theme');try{localStorage.setItem('theme',n);}catch(e){}upd();});h.appendChild(b);});})();
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>

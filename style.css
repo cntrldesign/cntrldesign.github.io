@@ -11,17 +11,17 @@
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   --maxw: 760px;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0a0a0a;
-    --ink: #f5f5f5;
-    --ink-soft: #cfcfcf;
-    --muted: #9a9a9a;
-    --hair: #242424;
-    --surface: #151515;
-    --red: #ff3636;
-    --red-ink: #ff5a5a;
-  }
+/* Dark theme is OPT-IN via the header toggle (data-theme="dark"). Light is the
+   welcoming default for everyone, regardless of OS setting. */
+:root[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --ink: #f5f5f5;
+  --ink-soft: #cfcfcf;
+  --muted: #9a9a9a;
+  --hair: #242424;
+  --surface: #151515;
+  --red: #ff3636;
+  --red-ink: #ff5a5a;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -48,14 +48,12 @@ body {
   margin: 0 auto;
   border-bottom: 1px solid var(--hair);
 }
-.logo { display: inline-flex; line-height: 0; }
+.logo { display: inline-flex; line-height: 0; margin-right: auto; }
 .logo img { height: 30px; width: auto; }
 .logo .logo-light { display: block; }
 .logo .logo-dark { display: none; }
-@media (prefers-color-scheme: dark) {
-  .logo .logo-light { display: none; }
-  .logo .logo-dark { display: block; }
-}
+:root[data-theme="dark"] .logo .logo-light { display: none; }
+:root[data-theme="dark"] .logo .logo-dark { display: block; }
 .label {
   font-family: var(--mono);
   font-size: 11px;
@@ -63,6 +61,24 @@ body {
   text-transform: uppercase;
   color: var(--muted);
 }
+/* Dark-mode toggle (injected into the header by the inline theme script) */
+.theme-toggle {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--hair);
+  border-radius: 999px;
+  padding: 5px 12px;
+  cursor: pointer;
+  line-height: 1;
+  margin-left: 14px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.theme-toggle:hover { color: var(--ink); border-color: var(--muted); }
+.theme-toggle:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
 
 /* Eyebrow */
 .eyebrow {
