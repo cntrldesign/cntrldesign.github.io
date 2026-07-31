@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FIFO — Privacy Policy · CNTRL Design</title>
-  <meta name="description" content="Privacy policy for FIFO: Pantry & Recipes by CNTRL Design. Your pantry lives on your device, with an optional private cloud backup when you sign in with Apple.">
+  <meta name="description" content="Privacy policy for FIFO: Pantry & Recipes by CNTRL Design. Your pantry lives on your device, with an optional private cloud backup when you sign in.">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../../favicon.png" sizes="any" type="image/png">
@@ -34,14 +34,14 @@
 
     <div class="meta">
       <div><strong>Provider:</strong> CNTRL Design (&ldquo;we&rdquo;, &ldquo;us&rdquo;)</div>
-      <div><strong>Last updated:</strong> 20 July 2026</div>
+      <div><strong>Last updated:</strong> 31 July 2026</div>
       <div><strong>Contact:</strong> <a href="mailto:support@cntrldesign.com">support@cntrldesign.com</a></div>
     </div>
 
     <p class="lede">FIFO helps you track the food you already have, reduce waste, and plan groceries. We built FIFO to need as little of your data as possible. This policy explains what the app handles and where it goes.</p>
 
     <div class="callout">
-      <strong>The short version:</strong> Your pantry, grocery list, recipes, and history live <strong>on your device</strong>. If you choose to sign in with Apple, we also keep <strong>one private cloud backup</strong> of that data so you can restore it. Off-device processing is limited to the features and operations described below: AI scans and text requests, product and recipe lookups, account sync and referral records, subscription and install-attribution data, feedback, and limited diagnostics. No ads, no tracking, no analytics.
+      <strong>The short version:</strong> Your pantry, grocery list, recipes, and history live <strong>on your device</strong>. If you choose to sign in &mdash; with Apple on iPhone, or Google on Android &mdash; we also keep <strong>one private cloud backup</strong> of that data so you can restore it. Off-device processing is limited to the features and operations described below: AI scans and text requests, product and recipe lookups, account sync and referral records, subscription and install-attribution data, feedback, and limited diagnostics. No ads, no tracking, no analytics.
     </div>
 
     <section class="sec">
@@ -65,9 +65,10 @@
       <h3>b) Barcode and food-name lookups</h3>
       <p>If you scan a product barcode, the barcode number is sent to <strong>Open Food Facts</strong> (an open product database) to fetch the product name. No personal information is included.</p>
       <p>If you tap <strong>Find nutrition facts</strong> on a fresh item &mdash; one without a barcode or nutrition label &mdash; the item&rsquo;s name (for example, &ldquo;chicken thighs&rdquo;) is sent to <strong>USDA FoodData Central</strong>, a public U.S. government food database, to fetch typical nutrition facts for that food. This happens <strong>only when you tap the button</strong>, never automatically, and the request carries no account details. Like any web request, it includes your device&rsquo;s IP address; we don&rsquo;t retain the lookup, and the result is always marked <em>estimated</em> so you can adjust it.</p>
-      <h3>c) Optional account and cloud backup (Sign in with Apple)</h3>
-      <p>FIFO works fully without an account. If you choose to <strong>Sign in with Apple</strong>, we receive your email address &mdash; or Apple&rsquo;s private relay address if you pick <em>Hide My Email</em> &mdash; and, the first time only, your name (shown on your account screen). Both are stored with your account until you delete it.</p>
+      <h3>c) Optional account and cloud backup (Sign in with Apple or Google)</h3>
+      <p>FIFO works fully without an account. If you choose to sign in, we receive your email address and your name (shown on your account screen), stored with your account until you delete it. On iPhone this uses <strong>Sign in with Apple</strong>, so you may substitute Apple&rsquo;s private relay address by picking <em>Hide My Email</em>. On Android it uses <strong>Sign in with Google</strong>, which provides your Google account&rsquo;s email address and name; Google offers no relay-address equivalent. Signing in with Google also stores your Google profile&rsquo;s basic details with your account &mdash; including the web address of your profile picture &mdash; as part of the standard sign-in record; FIFO never displays or uses them (your in-app account photo, if you set one, stays on your device).</p>
       <p>Signing in also keeps <strong>one cloud backup</strong> of your pantry data &mdash; items, lists, recipes, history, and settings; never your photos &mdash; stored with your account (via Supabase) and replaced on each sync, so you can restore it on a new device. Access is locked to your account, and it is never shared with anyone else. If you stay signed out, nothing changes: your data stays on your device.</p>
+      <p>On Android, FIFO opts out of Google&rsquo;s automatic device backup and device-to-device transfer (<code>allowBackup=false</code>). Your pantry never rides along with your phone&rsquo;s Google backup: the only off-device copy is the in-app cloud backup you explicitly enable by signing in, and uninstalling the app erases everything stored on the device.</p>
       <h3>d) Fair-use rate limiting</h3>
       <p>So that AI features stay affordable and available to everyone, the app creates a <strong>random, anonymous identifier</strong> (via Supabase anonymous sign-in) and stores only a <strong>daily count</strong> of AI requests against it, to enforce per-user and overall limits. If you sign in, requests count against your account instead. Reinstalling the app while signed out generates a new identifier.</p>
       <h3>e) Product images</h3>
@@ -85,14 +86,15 @@
 
     <section class="sec">
       <div class="sec-h"><span class="sec-n">03</span><h2>What we do NOT collect</h2></div>
-      <p>We do not collect your phone number, contacts, precise location, or advertising identifiers. Your name and email reach us only through Sign in with Apple &mdash; and only if you choose to sign in. FIFO contains <strong>no in-app advertising, no third-party analytics/tracking SDKs, and we never sell your data.</strong> (We do promote FIFO through Apple Search Ads and receive Apple&rsquo;s privacy-preserving install-attribution token described in section 02f, which does not track you across apps.)</p>
+      <p>We do not collect your phone number, contacts, precise location, or advertising identifiers. Your name and email reach us only through Sign in with Apple on iPhone, or Sign in with Google on Android &mdash; and only if you choose to sign in. FIFO contains <strong>no in-app advertising, no third-party analytics/tracking SDKs, and we never sell your data.</strong> (We do promote FIFO through Apple Search Ads and receive Apple&rsquo;s privacy-preserving install-attribution token described in section 02f, which does not track you across apps.)</p>
     </section>
 
     <section class="sec">
       <div class="sec-h"><span class="sec-n">04</span><h2>Third-party services</h2></div>
       <p>The services that may process data on our behalf, each under its own privacy policy:</p>
       <ul>
-        <li><strong>Apple</strong> &mdash; in-app purchases / subscriptions, Sign in with Apple</li>
+        <li><strong>Apple</strong> &mdash; in-app purchases / subscriptions, Sign in with Apple (iPhone)</li>
+        <li><strong>Google</strong> &mdash; Sign in with Google (Android)</li>
         <li><strong>RevenueCat</strong> &mdash; subscription management</li>
         <li><strong>Supabase</strong> &mdash; backend, authentication, cloud backup, rate limiting</li>
         <li><strong>Anthropic (Claude API)</strong> &mdash; AI image and text processing</li>
@@ -118,9 +120,9 @@
       <div class="sec-h"><span class="sec-n">06</span><h2>Your choices and deletion</h2></div>
       <ul>
         <li><strong>Delete your data:</strong> use <strong>Reset app</strong> in the app&rsquo;s Settings, or uninstall the app, to remove all information stored on your device.</li>
-        <li><strong>Delete your account:</strong> in the app, go to <strong>Account &rarr; Delete account</strong>. This permanently deletes your account, your email and name, your cloud backup, and your referral code/reward history, removes your account from referral links, and revokes the Sign in with Apple connection at Apple. Signing out alone stops syncing but keeps your backup until you delete the account.</li>
+        <li><strong>Delete your account:</strong> in the app, go to <strong>Account &rarr; Delete account</strong>. This permanently deletes your account, your email and name, your cloud backup, and your referral code/reward history, and removes your account from referral links. If you signed in with Apple, it also revokes the Sign in with Apple connection at Apple. Signing out alone stops syncing but keeps your backup until you delete the account.</li>
         <li><strong>Reset your anonymous identifier:</strong> reinstalling the app while signed out issues a new anonymous identifier.</li>
-        <li><strong>Subscriptions:</strong> manage or cancel anytime in your Apple ID &rarr; Subscriptions settings.</li>
+        <li><strong>Subscriptions:</strong> FIFO Premium is currently available on iPhone only. Manage or cancel anytime in your Apple ID &rarr; Subscriptions settings.</li>
         <li>For any privacy question or request, contact us at the email above.</li>
       </ul>
     </section>
