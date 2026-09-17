@@ -1,6 +1,7 @@
 # cntrldesign.com
 
-Static site for **CNTRL Design**, served via GitHub Pages at `https://cntrldesign.com`.
+Static-site source for **CNTRL Design**. The GitHub `main` branch matched this checkout on
+2026-09-17, but `cntrldesign.com` did not resolve that day and was not a live deployment.
 
 ## Contents
 - `index.html` — landing page (apex root)
@@ -13,7 +14,8 @@ Static site for **CNTRL Design**, served via GitHub Pages at `https://cntrldesig
 - `.gitignore` — keeps `assets/` (raw PSDs, paid Intro fonts, packaging) out of the public repo
 
 ## Updating
-Edit the HTML/CSS and push to the default branch. GitHub Pages redeploys automatically.
+Edit the HTML/CSS and verify locally. Publishing requires separate approval to commit and
+push, plus working GitHub Pages and custom-domain DNS configuration.
 
 ## ⛔ FIFO removed 2026-09-01
 FIFO was delisted from the App Store and unpublished from Google Play after its keep/kill gate
