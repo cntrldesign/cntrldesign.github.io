@@ -120,9 +120,6 @@ strong { font-weight: 700; }
 .principle { flex: 1; padding: 20px 0; text-align: center; font-family: var(--mono); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); border-left: 1px solid var(--hair); }
 .principle:first-child { border-left: 0; }
 
-/* Blocks */
-.block { border-top: 1px solid var(--hair); padding: 36px 0 8px; }
-
 /* Meta card */
 .meta {
   background: var(--surface);
@@ -145,31 +142,10 @@ strong { font-weight: 700; }
   margin: 20px 0;
 }
 
-/* Product screenshot — a minimal device frame for real app screenshots. Fixed dark bezel
-   regardless of site theme (a phone's chassis doesn't flip with a dark-mode toggle). */
-.phone-shot { max-width: 240px; margin: 28px auto; padding: 10px; background: #111214;
-  border-radius: 32px; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
-.phone-shot img { display: block; width: 100%; border-radius: 22px; }
-
-/* CTA button */
-.cta {
-  display: inline-block;
-  background: var(--ink);
-  color: var(--bg);
-  font-weight: 700;
-  padding: 12px 22px;
-  border-radius: 10px;
-  text-decoration: none;
-  margin: 10px 0 4px;
-}
-.cta:hover { text-decoration: none; opacity: 0.9; }
-
 /* Numbered sections */
 .sec { margin: 38px 0 0; }
 .sec-h { display: flex; align-items: baseline; gap: 12px; margin: 0 0 8px; }
 .sec-n { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--red-ink); letter-spacing: 0.04em; }
-
-hr { border: 0; border-top: 1px solid var(--hair); margin: 30px 0; }
 
 /* Footer (always dark) */
 .site-foot { background: #0a0a0a; color: #cfcfcf; margin-top: 64px; padding: 40px 0 48px; }
@@ -187,8 +163,8 @@ hr { border: 0; border-top: 1px solid var(--hair); margin: 30px 0; }
   left: -9999px;
   top: 0;
   z-index: 20;
-  background: var(--red);
-  color: #ffffff;
+  background: var(--red-ink);
+  color: var(--bg);
   padding: 10px 16px;
   font-size: 14px;
   border-radius: 0 0 8px 0;

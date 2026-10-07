@@ -26,8 +26,8 @@ git history if ever needed.
 
 ⚠️ **The next app will need its own privacy policy page before it can be submitted** — Apple requires
 a working privacy-policy URL for every App Store app, with no exception. Use `template/` to build it;
-`template/README.md` still refers to FIFO as the worked example, which now lives only in git history
-(see the commit that removed it).
+`template/README.md` uses Example App as the worked example and identifies FIFO as retired history
+that exists only in Git history.
 
 ## Brand
 - Colours: black `#0a0a0a`, white `#ffffff`, red `#ff0000`
